@@ -3,108 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proven System: Get Your Ex Back | The Ex Factor 2.0</title>
+    <title>The Ex Factor 2.0 - Reclaim Your Love</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use Inter font -->
     <style>
+        /* Base configuration for custom Tailwind colors */
+        :root {
+            --color-primary: #dc2626; /* Tailwind Red 600 */
+            --color-primary-dark: #b91c1c; /* Tailwind Red 700 */
+        }
+
+        /* Custom configuration for default (light) theme */
         body {
+            background-color: #f9fafb; /* Gray 50 */
+            color: #1f2937; /* Gray 800 */
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
+        }
+
+        /* Dark mode adjustments using prefers-color-scheme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #030712; /* Very dark background */
+                color: #f9fafb; /* Light text */
+            }
+            /* Dark mode card/container background */
+            .card-bg {
+                background-color: #1f2937; /* Dark Gray 800 */
+            }
+            .dark-text {
+                color: #d1d5db; /* Gray 300 */
+            }
+        }
+        
+        /* Custom styles for the sticky CTA at the bottom */
+        .fixed-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.3);
+            background-color: var(--color-primary); /* Primary color for visibility */
+        }
+        
+        /* Ensure the main content doesn't get hidden by the fixed CTA */
+        .main-content {
+            padding-bottom: 120px; /* Give space for the CTA (h-20 + padding) */
         }
     </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Header Section -->
-    <header class="bg-red-700 shadow-lg">
-        <div class="max-w-4xl mx-auto p-4 flex justify-center items-center">
-            <h1 class="text-2xl font-extrabold text-white tracking-tight text-center">
-                YOUR LAST CHANCE
-            </h1>
-        </div>
-    </header>
-
-    <!-- Main Content Card -->
-    <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 border-t-8 border-red-600">
-            
-            <!-- Urgent Headline -->
-            <h2 class="text-4xl md:text-5xl font-black text-red-600 mb-4 leading-tight">
-                STOP! Don't Make This <span class="text-gray-900">FATAL</span> Mistake Before You <span class="text-red-600">START</span> Contact.
-            </h2>
-            <p class="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
-                There is an <span class="font-extrabold text-red-600">EXCLUSIVE SECRET</span> you must know right now if you truly want your ex <span class="font-extrabold text-red-600">BACK</span> in your arms.
-            </p>
-
-            <!-- Key Benefit Section 1 -->
-            <div class="space-y-6 mb-10">
-                <div class="flex items-start space-x-4 bg-yellow-50 p-4 rounded-xl border border-yellow-200 shadow-md">
-                    <svg class="w-8 h-8 text-yellow-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900">GUARANTEE</h3>
-                        <p class="text-lg text-gray-700">No matter how bad the breakup was, <span class="font-bold text-gray-900">FIND</span> the <span class="font-bold text-gray-900">PROVEN</span> strategy that works to reignite that spark.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 bg-blue-50 p-4 rounded-xl border border-blue-200 shadow-md">
-                    <svg class="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.044m17.236 0c.26-.502.58-1.015.96-1.53m-.96 1.53c-.26-.502-.58-1.015-.96-1.53M6 18h12M6 6v12M18 6v12"></path></svg>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900">PROVEN SYSTEM</h3>
-                        <p class="text-lg text-gray-700">Stop guessing. Get the step-by-step plan that <span class="font-bold text-gray-900">WILL TRANSFORM</span> you from the overlooked party into the <span class="font-bold text-gray-900">IRREPLACEABLE</span> partner.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 bg-green-50 p-4 rounded-xl border border-green-200 shadow-md">
-                    <svg class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900">IMMEDIATE ACTION</h3>
-                        <p class="text-lg text-gray-700">Every second you waste is a potential lost opportunity. <span class="font-bold text-gray-900">LEARN</span> how to take <span class="font-bold text-gray-900">FULL CONTROL</span> of this situation <span class="font-bold text-gray-900">RIGHT NOW</span>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Program Description -->
-            <div class="mb-10 text-center">
-                <h3 class="text-3xl font-extrabold text-gray-900 mb-4">The Ex Factor 2.0 is your <span class="text-red-600">ULTIMATE SOLUTION</span>.</h3>
-                <p class="text-xl text-gray-700 italic">
-                    This isn't just a book—it's a <span class="font-bold text-gray-900">REVOLUTIONARY</span> roadmap designed to build new attraction, turn the tables, and ensure that the breakup is only a story from the past.
-                </p>
-            </div>
-
-            <!-- Final CTA Section -->
-            <div class="text-center">
-                <p class="text-2xl font-bold text-gray-900 mb-6 bg-red-100 p-4 rounded-lg">
-                    Don't let this opportunity <span class="font-extrabold text-red-600">SLIP AWAY FOREVER</span>!
-                </p>
-                <!-- CTA Button - Link updated to https://bit.ly/3LHio19 -->
-                <a href="https://bit.ly/3LHio19" class="inline-block w-full sm:w-auto px-12 py-4 text-2xl font-bold text-white uppercase bg-red-700 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 tracking-wider">
-                    <span class="animate-pulse">CLICK HERE</span> TO CHANGE YOUR DESTINY!
-                </a>
-                <p class="text-sm text-gray-500 mt-4">
-                    <span class="font-bold text-gray-900">INSTANT</span> access to this <span class="font-bold text-gray-900">SECRET SYSTEM</span>.
-                </p>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Footer Disclaimer -->
-    <footer class="text-center p-4 text-xs text-gray-500">
-        <p>&copy; 2025 Affiliate Promotion. All results depend on your effort and adherence to the program.</p>
-    </footer>
-
-    <!-- Simple Button Animation Script -->
     <script>
-        // Simple hover effect using JS for extra flair (Tailwind handles most effects)
-        const ctaButton = document.querySelector('a[href="https://bit.ly/3LHio19"]');
-        if (ctaButton) {
-            ctaButton.addEventListener('mouseover', () => {
-                ctaButton.classList.add('shadow-red-500/50');
-            });
-            ctaButton.addEventListener('mouseout', () => {
-                ctaButton.classList.remove('shadow-red-500/50');
-            });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-cta': 'var(--color-primary)',
+                        'primary-cta-dark': 'var(--color-primary-dark)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
         }
     </script>
+</head>
+<body>
+
+    <!-- Main Content Container -->
+    <div class="main-content max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="text-center py-8">
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-primary-cta mb-2 dark-text">
+                <span class="block">RECLAIM YOUR LOVE:</span>
+                The <span class="text-yellow-400">EX FACTOR 2.0</span> Breakthrough
+            </h1>
+            <p class="text-xl sm:text-2xl font-light dark:text-gray-300 mt-4">
+                The <span class="font-bold">URGENT</span> Guide to Instantly Reversing Your Breakup and Making Them Beg for You Back.
+            </p>
+        </header>
+
+        <!-- Value Proposition / Hook -->
+        <div class="card-bg p-6 sm:p-8 rounded-xl shadow-2xl mt-10 border border-red-200 dark:border-red-800">
+            <h2 class="text-3xl font-bold text-center mb-6 text-primary-cta">
+                STOP The Pain. START The Action.
+            </h2>
+            <p class="text-lg leading-relaxed dark:text-gray-300">
+                You feel devastated. You know the connection you shared was <span class="font-extrabold">REAL</span>, but right now, silence is killing you. Don't waste another second on outdated, passive advice. The Ex Factor 2.0 is the <strong>DEFINITIVE, PROVEN</strong> system designed to put you back in control. It's time to trigger an unstoppable wave of desire and respect that pulls your ex back into your life, *permanently*.
+            </p>
+        </div>
+
+        <!-- Key Benefits Section (Power Words) -->
+        <section class="mt-12">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mb-6 dark-text">
+                Inside, You Will Instantly Unlock the <span class="text-red-500">SECRET</span> to:
+            </h3>
+            <ul class="space-y-4 text-left">
+                <!-- Power Word: Instantly, Shatter -->
+                <li class="flex items-start dark:text-gray-300">
+                    <svg class="flex-shrink-0 w-6 h-6 mr-3 text-red-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-lg">
+                        <strong>INSTANTLY</strong> <span class="font-extrabold text-red-600 dark:text-red-400">SHATTER</span> the "No Contact" wall and compel them to respond to you, effectively reversing the silent treatment.
+                    </span>
+                </li>
+                <!-- Power Word: Unstoppable, Guaranteed -->
+                <li class="flex items-start dark:text-gray-300">
+                    <svg class="flex-shrink-0 w-6 h-6 mr-3 text-red-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-lg">
+                        Execute the <span class="font-extrabold">UNSTOPPABLE</span> "Magnetic Attraction" technique, making you irresistible and ensuring a deep, <strong>GUARANTEED</strong> commitment.
+                    </span>
+                </li>
+                <!-- Power Word: Proven, Critical -->
+                <li class="flex items-start dark:text-gray-300">
+                    <svg class="flex-shrink-0 w-6 h-6 mr-3 text-red-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-lg">
+                        Master the <strong>PROVEN</strong> psychological triggers to eliminate competition and become the *only* person they can think about.
+                    </span>
+                </li>
+                <!-- Power Word: Ultimate, Forbidden -->
+                <li class="flex items-start dark:text-gray-300">
+                    <svg class="flex-shrink-0 w-6 h-6 mr-3 text-red-500 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-lg">
+                        Discover the <strong>ULTIMATE</strong> system for avoiding the <span class="italic">"friend zone"</span> and accessing the <strong>FORBIDDEN</strong> knowledge to restore passion.
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Final Urgency Block -->
+        <section class="mt-12 mb-6 text-center card-bg p-6 rounded-lg shadow-xl dark:border dark:border-gray-700">
+            <p class="text-xl font-semibold dark:text-gray-200">
+                Every minute you wait, the distance grows. This is your <span class="font-black text-red-600 dark:text-red-400">LAST CHANCE</span> to turn the tide.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Fixed Call-to-Action Bar (Mobile-Friendly) -->
+    <a href="https://bit.ly/3LHio19" target="_blank" rel="noopener noreferrer" class="fixed-cta block p-4 h-20 flex items-center justify-center">
+        <button type="button" class="w-full text-center py-3 px-6 rounded-xl font-extrabold text-2xl uppercase 
+               bg-yellow-400 text-gray-900 
+               hover:bg-yellow-300 
+               transition duration-300 ease-in-out 
+               shadow-2xl transform hover:scale-105">
+            YES! I Want The Ex Factor 2.0 NOW!
+        </button>
+    </a>
+
 </body>
 </html>
